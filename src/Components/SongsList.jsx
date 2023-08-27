@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { FaPlay } from "react-icons/fa"
 import { FiHeart, FiSearch } from "react-icons/fi"
 import { HiArrowRight } from "react-icons/hi"

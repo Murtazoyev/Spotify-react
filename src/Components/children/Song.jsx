@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import currentTrack from "../../Contexts/currentTrack";

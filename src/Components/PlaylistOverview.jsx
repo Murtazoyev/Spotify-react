@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useRef } from "react";
 import bgContext from "../Contexts/backgroundContext";
 import { getAverageRGB } from "../hook/getImageColor";
