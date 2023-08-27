@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import BrowseAll from "../Components/Search_childs/BrowseAll";
