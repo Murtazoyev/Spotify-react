@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import AllRouts from "./Components/AllRouts";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
