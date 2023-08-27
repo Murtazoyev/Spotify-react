@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { useEffect, useState } from "react";
@@ -14,7 +15,6 @@ const Library = () => {
 	const { loading, error, request } = useHttp();
 
 	const token = useContext(TOKEN);
-
 	
 	useEffect(() => {
 		request(`https://api.spotify.com/v1/browse/new-releases?country=UZ&limit=50&offset=5`, 

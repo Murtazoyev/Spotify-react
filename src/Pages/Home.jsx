@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext } from "react";
 import { useEffect, useState } from "react";
 import MyPlaylist from "../Components/children/MyPlaylist";
