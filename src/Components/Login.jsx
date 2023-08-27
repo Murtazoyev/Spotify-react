@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useContext } from 'react';
 import spotify from '../Contexts/spotifycontext';
 
@@ -9,7 +10,7 @@ const Login = () => {
         <div className='login-page'>
             <div className="logo-spotify">
                 <img src="/img/spotify-logo.svg" className='logo-img' />
-                <h1></h1>
+                {/* <h1></h1> */}
             </div>
             <div className='redirect-block'>
             <a href={`${AUTH_ENDPOINT}?client_id=${client_id}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=playlist-modify-public`}>

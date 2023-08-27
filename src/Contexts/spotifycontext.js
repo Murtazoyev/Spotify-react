@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const spotify = createContext({
-    client_id: "f2e286ece2574ad6b334b55d03764483",
+    client_id: "44f2d95737104a19943990a814afccbd",
     REDIRECT_URI: "https://weprospoty.netlify.app/",
     // REDIRECT_URI: "http://localhost:3000",
     AUTH_ENDPOINT: "https://accounts.spotify.com/authorize",
