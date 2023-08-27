@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #121212;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00523c;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #000000;
+  };
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.header {
+  @apply w-full bg-black md:bg-[#c4c4c4] py-7 px-10;
+}
+
+.navBtn {
+  @apply text-white bg-[black] hover:bg-[black]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2 text-[24px] gap-5
+}
+
+div {
+  transition: 2s ease;
+}
+
+
+input[type='range'] {
+  -webkit-appearance: none !important;
+  height:7px;
+  border-radius: 100px;
+  background-color: gray;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background:white;
+  height:15px;
+  width:15px;
+  border-radius: 100px;
+}
+
+audio {
+	height: 20px;
+	// color: white;
+	border: none;
+	width:500px;
+}
+
+audio::-webkit-media-controls-panel {
+	background-color: #181818;
+	height: 20px;
+	border: none;
+}
+
+// audio::-webkit-media-controls-mute-button
+
+audio::-webkit-media-controls-play-button {
+	display: none;
+}
+
+audio::-webkit-media-controls-timeline-container {
+	// background-color: white;
+	color: white;
+}
+
+audio::-webkit-media-controls-current-time-display {
+	display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+	display: none;
+
+}
+
+audio::-webkit-media-controls-timeline-thumb {
+	color: white;
+}
+audio::-webkit-media-controls-volume-slider-container {
+	display: none;
+}	
+
+// audio::-webkit-media-controls-volume-slider {
+// 	display: none;
+// }
+
+// audio::-webkit-media-controls-seek-back-button {
+// 	display: none;
+// }
+
+// audio::-webkit-media-controls-seek-forward-button {
+// 	display: none;
+// }
+.bigImg {
+  width: 300px;
+  position: absolute;
+  top: -300px;
+  left: 0;
+  transition: .3s linear;
+}
+
+
+.login-page{
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  padding-top: 200px;
+}
+.logo-spotify{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redirect-block{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.log-in-btn{
+  width: 180px;
+  height: 50px;
+  background-color: #1bd760;
+  color: white;
+  font-size: 24px;
+}
+.logo-img{
+   height: 200px; 
+}
+.first-track {
+  transition: .5 ease;
+  cursor: pointer;
+}
+.play-btn {
+  transition: .5 ease;
+  position: absolute;
+  bottom: -100px;
+  right: 15px;
+  cursor: default;
+}
+.first-track:hover .play-btn {
+  bottom: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+  .play-btn {
+    bottom: 15px;
+  }
+  .mob-inp {
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(8px);
+    input {
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
